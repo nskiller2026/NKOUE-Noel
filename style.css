@@ -431,3 +431,65 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* Barre de navigation */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #222;
+}
+
+.logo{
+    color: white;
+}
+
+/* Menu */
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Cache la checkbox */
+#menu-toggle{
+    display: none;
+}
+
+/* Cache le hamburger sur ordinateur */
+.hamburger{
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Version mobile */
+@media (max-width:768px){
+
+    .hamburger{
+        display: block;
+    }
+
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #222;
+        padding: 20px;
+    }
+
+    /* Affiche le menu quand la case est cochée */
+    #menu-toggle:checked ~ .nav-links{
+        display: flex;
+    }
+}
