@@ -11,6 +11,40 @@
 }
 
 
+/* Caché par défaut */
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  /* Quand on clique sur les traits */
+  #menu-toggle:checked ~ .menu {
+    display: block;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+}
+
+
+
 
 * {
     margin: 0;
@@ -32,6 +66,8 @@ body {
 
 #menu-toggle {
     display: none;
+    gap: 20px;
+
 }
 
 .hamburger {
