@@ -432,6 +432,19 @@ a {
   }
 }
 
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+}
 /* Barre de navigation */
 .navbar{
     display: flex;
