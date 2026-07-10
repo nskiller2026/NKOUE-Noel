@@ -378,9 +378,9 @@ a {
 
 .footer {
   padding: 24px clamp(20px, 5vw, 72px);
-  color: var(--muted);
+  color: white;
   text-align: center;
-  background: #ffffff;
+  background: #10213f;
   border-top: 1px solid var(--line);
 }
 
